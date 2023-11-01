@@ -1,0 +1,64 @@
+
+
+.homepage{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px 0 100px;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+#carouselHomePage {
+    max-height: 50%;
+    padding:  20px 60px 20px 60px ;
+
+}
+
+.carousel-inner .carousel-item img {
+    max-height: 50%;
+}
+
+#sobre{
+    padding: 60px;
+}
+
+.titulo-sobre{
+    padding-bottom: 20px;
+}
+.sobre-txt{
+
+}
+
+.nossa-historia{
+    font-size: 1.5rem;
+}
+
+.saudacoes{
+    text-align: center;
+}
+
+.titulo-saudacoes{
+    padding-top: 15px;
+}
+
+.btn-class{
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center ;
+    gap: 10px;
+}
+
+.btn{
+    width: 100vh;
+}

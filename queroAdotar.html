@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quero Adotar</title>
+    <link rel="stylesheet" href="queroAdotar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #2a6f97; height: 100px"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><strong>Acolhendo Patas</strong></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#sobre">Nossa História</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="processoAdocao.html"
+                role="button"
+                aria-expanded="false"
+              >
+                Processo de adoção
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-form">
+      <h1 class="title-form">Encontre seu novo amigo!</h1>
+
+      <!--Formulário para adotar-->
+
+      <div class="content-form">
+        <select
+          class="form-select"
+          id="form-especie"
+          aria-label="Default select example"
+        >
+          <option selected>Todas as espécies</option>
+          <option value="dog">Cachorro</option>
+          <option value="cat">Gato</option>
+        </select>
+        <select
+          class="form-select"
+          id="form-sexo"
+          aria-label="Default select example"
+        >
+          <option selected>Todos os sexos</option>
+          <option value="fem">Fêmea</option>
+          <option value="macho">Macho</option>
+        </select>
+        <select
+          class="form-select"
+          id="form-porte"
+          aria-label="Default select example"
+        >
+          <option selected>Todos os portes</option>
+          <option value="pequeni">Pequeno</option>
+          <option value="medio">Médio</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+
+      <div class="content-form">
+        <select
+          class="form-select"
+          id="form-estados"
+          aria-label="Default select example"
+        >
+          <option selected>Todos os estados</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <button class="btn btn-primary" style="width: 30%">Buscar</button>
+      </div>
+
+      <!--Cards    src=".../100px180/"-->
+      <div class="card-container">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top custom-img"
+            src="./img/wepik-export-202310170047338MiU.png"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kiara</h5>
+            <p class="card-text" style="color: rgb(156, 144, 144)">São Paulo</p>
+            <a href="#" class="btn btn-primary">Adotar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top custom-img"
+            src="./img/wepik-export-202310170047338MiU.png"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kiara</h5>
+            <p class="card-text" style="color: rgb(156, 144, 144)">São Paulo</p>
+            <a href="#" class="btn btn-primary">Adotar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top custom-img"
+            src="./img/wepik-export-202310170047338MiU.png"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kiara</h5>
+            <p class="card-text" style="color: rgb(156, 144, 144)">São Paulo</p>
+            <a href="#" class="btn btn-primary">Adotar</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top custom-img"
+            src="./img/wepik-export-202310170047338MiU.png"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kiara</h5>
+            <p class="card-text" style="color: rgb(156, 144, 144)">São Paulo</p>
+            <a href="#" class="btn btn-primary">Adotar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

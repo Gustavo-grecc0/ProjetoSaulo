@@ -1,0 +1,37 @@
+.container-form{
+    padding: 40px 40px 0px 40px;
+}
+
+.title-form{
+    padding-bottom: 30px;
+}
+
+.content-form{
+    display: flex;
+    gap: 25px;
+    padding-bottom: 40px;
+}
+
+
+
+#form-especie {
+    width: 40%;
+}
+
+#form-sexo{
+    width: 25%;
+}
+
+#form-porte{
+    width: 28.8%;
+}
+
+#form-estados{
+    width: 40%;
+}
+
+.card-container{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
