@@ -23,3 +23,10 @@ def createAdotantes(request):
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+@api_view(['POST']) # Criar um Dog
+def createDogs(request):
+    serializer = DogSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data, status=status.HTTP_201_CREATED)

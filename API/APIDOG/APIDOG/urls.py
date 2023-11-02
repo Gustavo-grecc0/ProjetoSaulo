@@ -23,4 +23,5 @@ urlpatterns = [
     path('adotante/',views.getAdotantes,name="getAdotantes"),
     path('dog/',views.getDogs,name="getDogs"),
     path('cadastraradotante/',views.createAdotantes,name="createAdotantes"),
+    path('cadastrardog/',views.createDogs,name="createDogs"),
 ]
