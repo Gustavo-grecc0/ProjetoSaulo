@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('adotante/',views.getAdotantes,name="getAdotantes"),
     path('dog/',views.getDogs,name="getDogs"),
+    path('cadastraradotante/',views.createAdotantes,name="createAdotantes"),
 ]
