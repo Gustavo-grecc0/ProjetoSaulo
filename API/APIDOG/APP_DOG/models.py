@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Adotante(models.Model):
+class Adotante(models.Model): # Models para o banco de dados 
     id = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=100)
     idade = models.IntegerField()
@@ -12,7 +12,7 @@ class Adotante(models.Model):
     def __str__(self):
         return self.nome
 
-class Dog(models.Model):
+class Dog(models.Model):  # Models para o banco de dados 
     id = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=100)
     idade = models.IntegerField()

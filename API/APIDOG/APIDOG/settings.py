@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
-    'APP_DOG',
-    'corsheaders',
+    'rest_framework', # Dependencia para fazer API rest com django (usar só no back )
+    'APP_DOG', # Onde está a aplicação 
+    'corsheaders', # Dependencia do Cors para o django conseguir atender URL que não é dele 
 ]
 
 MIDDLEWARE = [
@@ -50,10 +50,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware', # Complemento da configuração do Corsheaders
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True  # Configurando para atender qualquer porta
 
 ROOT_URLCONF = 'APIDOG.urls'
 

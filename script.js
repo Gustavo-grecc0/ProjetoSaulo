@@ -15,3 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Fetch error:', error);
         });
 });
+
+// Modelo de request com JS para o back
