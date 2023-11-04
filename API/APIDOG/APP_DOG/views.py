@@ -17,6 +17,24 @@ def getDogs(request):
     serializer = DogSerializer(dog, many=True)                   # Convert to JSON (serialize)
     return Response(serializer.data, status=status.HTTP_200_OK)     # Return JSON to client
 
+@api_view(['GET']) # Get para um resultado Adotante
+def unigetAdotante(request, id):
+    try:
+        adotante = Adotante.objects.get(id=id)
+        serializer = AdotanteSerializer(adotante, many=False)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+@api_view(['GET']) # Get para um resultado Dog 
+def unigetDog(request, id):
+    try:
+        dog = Dog.objects.get(id=id)
+        serializer = DogSerializer(dog, many=False)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
 @api_view(['POST']) # Criar um Adotante
 def createAdotantes(request):
     serializer = AdotanteSerializer(data=request.data)
@@ -60,7 +78,7 @@ def editAdotante(request, id):
     except:
         return Response(status=status.HTTP_404_NOT_FOUND)
     
-@api_view(['PUT'])  
+@api_view(['PUT'])  # editar um Dog 
 def editDog(request, id):
     try:
         dog = Dog.objects.get(id=id)
