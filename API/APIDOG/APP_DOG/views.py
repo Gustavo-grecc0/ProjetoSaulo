@@ -31,4 +31,21 @@ def createDogs(request):
         serializer.save()
     return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+@api_view(['DELETE'])   # Apagar um Adotante 
+def deleteAdotante(request, id):
+    try:
+        adotante = Adotante.objects.get(id=id)
+        adotante.delete()
+        return Response(status=status.HTTP_200_OK)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+@api_view(['DELETE'])   # Apagar um Dog 
+def deleteDog(request, id):
+    try:
+        dog = Dog.objects.get(id=id)
+        dog.delete()
+        return Response(status=status.HTTP_200_OK)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
