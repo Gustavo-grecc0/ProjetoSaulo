@@ -49,3 +49,24 @@ def deleteDog(request, id):
     except:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
+@api_view(['PUT'])  # editar adotante
+def editAdotante(request, id):
+    try:
+        adotante = Adotante.objects.get(id=id)
+        serializer = AdotanteSerializer(instance=adotante, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
+@api_view(['PUT'])  
+def editDog(request, id):
+    try:
+        dog = Dog.objects.get(id=id)
+        serializer = DogSerializer(instance=dog, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+    except:
+        return Response(status=status.HTTP_404_NOT_FOUND)
